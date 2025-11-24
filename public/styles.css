@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+body{
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    background-color: #3E5F44;
+    
+
+}
+
+body {
+  background-image: url('./img-mokepon/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80%;
+  filter: brightness(0.9);
+}
+h1.titulo {
+    font-size: 1.8rem;
+  }
+
+#seleccionar-mascota {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.titulo {
+ color:#FFEB3B;
+  text-shadow: 10px 10px 15px #413f3f;
+font-size: 120px;
+text-align: center;
+}
+
+.subtitulo{display: flex;
+color:#3E5F44;
+font-size: 30px;
+}
+
+
+.tarjetas, .tarjetas-ataques{display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {width: 340px;
+    padding: 10px;
+    background: transparent;
+    border: 5px solid #5E936C;
+    font-size: 17px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.tarjeta-de-mokepon:hover{
+  background-color: #FFEB3B;
+transition: .5s;
+}
+
+.tarjeta-de-mokepon img{width: 50%;border-radius: 16px;height: auto;}
+
+#titulo{font-size: 120px;
+  text-align: center;
+  color:#FFEB3B;
+  text-shadow: 10px 10px 15px #413f3f;
+}
+
+  input{display: none;}
+    
+  input:checked + label{
+    background: #FFEB3B;
+  }
+
+    #boton-mascota {width: 200px;
+    height: 50px;
+    background: transparent;
+    border-radius: 20px;
+    border: solid #5E936C;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    margin-top: 30px;
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    background-color: #3E5F44;
+    
+}
+    #boton-mascota:hover{background-color:#FFEB3B ;
+    transition: .5s;
+  }
+
+    #seleccion-ataque {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      color: white;     
+    }
+    .boton-de-ataque{
+
+      background-color: #5E936C;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 30px;
+      border-color: transparent;
+       width: 80px;
+    }
+    .boton-de-ataque:hover{background-color: #FFEB3B;
+    transition: .5s;}
+
+    #mascota-enemigo{color: #413f3f;
+    }
+
+    #mascota-jugador{color: #413f3f;
+    }
+
+    #mensaje{color: #413f3f;
+    }
+
+    .ataques-jugador, .ataques-enemigo{display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    }
+    
+   
+
+    #boton-reiniciar{
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border-radius: 20px;
+    border: solid #5E936C;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    margin-top: 30px;
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    background-color: #3E5F44;
+    }
+    #boton-reiniciar:hover{color:#FFEB3B;
+  text-shadow: 10px 10px 15px #413f3f;}
+
+    @media (max-width: 600px) {
+  .tarjetaMascota {
+    width: 80%;
+  }
+
+
+  .ataques {display: grid;
+  grid-template-columns: 100px 100px;}
+}
+#vidas-jugador,#vidas-enemigo{
+  font-size: 32px;
+  margin-bottom: 10px 0;
+  color:#413f3f
+}
+
+.texto-vidas {
+    text-align: center;
+    margin: 5px 0;
+    color: #413f3f;
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ver-mapa button{
+  width: 120px;
+    height: 50px;
+    background: transparent;
+    border-radius: 20px;
+    border: solid #5E936C;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    background-color: #3E5F44;
+}
+
+
+@media(max-width:560px){
+  .tarjetas, .tarjetas-ataques
+  {flex-direction: column;
+
+  }
+}
+
+
+@media(max-width:300px){
+  #ver-mapa div{
+    display: flex;
+  flex-direction: column;
+
+  }
+}
